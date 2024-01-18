@@ -20,7 +20,7 @@ NPC Avatars Mod (SF)或NPC Avatars Mod (SF for lower version)（mod本体，点�
 
 modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 
-汉化发布仓库：https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization（说明文档中包含mod加载方式）
+汉化发布仓库：https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization （说明文档中包含mod加载方式）
 
 简易框架：https://github.com/emicoto/DOLMods/releases
 
