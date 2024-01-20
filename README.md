@@ -1,4 +1,4 @@
-## NPC头像图标增添mod 
+## NPC头像图标增添mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
 
 安装后社交栏会有角色小头像，表情跟随态度文本变化，部分角色有不同性别或造型的差分。
 
@@ -38,7 +38,7 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 
 <details>
 
-<summary>点击展开（截止到v0.8.0）</summary>
+<summary>截止到v0.8.0</summary>
 
 - Alex（共24张）
 - Remy（共14张）
@@ -62,6 +62,7 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 - Leighton（共12张）
 - Avery（共20张）
 - Niki（共4张）
+如果角色显示不全，请尝试更换版本
 
 </details>
 
