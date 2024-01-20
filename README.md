@@ -1,4 +1,4 @@
-## NPC头像图标增添mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
+# NPC头像图标增添mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
 
 安装后社交栏会有角色小头像，表情跟随态度文本变化，部分角色有不同性别或造型的差分。
 
@@ -6,15 +6,15 @@
 
 模组（包括图片和代码）在DoL相关范围内自由使用，可二改二转；如果你想做一个类似功能也没问题，不需要问我。如果要二改或整合，请务必保留“图像说明”部分，或者在游戏内其他地方标注。
 
-### 使用说明
+## 使用说明
 
-#### 版本说明
+### 版本说明
 
 - NPC Avatars Mod (SF)：简易框架版
 
 - NPC Avatars Mod：临时版，可单独加载无需简易框架，如果SF版出现问题则选择该版本
 
-#### 必须下载
+### 必须下载
 
 - 带有Modloader的游戏本体（用于加载mod）
 
@@ -22,7 +22,7 @@
 
 - NPC Avatars Mod (SF)（mod本体，点击右边release下载）
 
-#### 相关链接
+### 相关链接
 
 modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 
@@ -30,11 +30,11 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 
 简易框架：https://github.com/emicoto/DOLMods/releases
 
-#### 加载顺序
+### 加载顺序
 
 首先加载简易框架（Simple Frameworks），再加载NPC Avatars Mod (SF)。
 
-### 已实装角色
+## 已实装角色
 
 <details>
 
@@ -62,10 +62,11 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 - Leighton（共12张）
 - Avery（共20张）
 - Niki（共4张）
+
 如果角色显示不全，请尝试更换版本
 
 </details>
 
-### 问题反馈
+## 问题反馈
 
 反馈群：832410983
