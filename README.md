@@ -1,4 +1,4 @@
-## NPC头像图标增添mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
+## NPC头像图标增添mod 
 
 安装后社交栏会有角色小头像，表情跟随态度文本变化，部分角色有不同性别或造型的差分。
 
@@ -33,6 +33,37 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 #### 加载顺序
 
 首先加载简易框架（Simple Frameworks），再加载NPC Avatars Mod (SF)。
+
+### 已实装角色
+
+<details>
+
+<summary>点击展开（截止到v0.8.0）</summary>
+
+- Alex（共24张）
+- Remy（共14张）
+- Gwylan（共1张）
+- Wren（共14张）
+- Bailey（共2张）
+- Jordan（共3张）
+- Sydney（共112张）
+- Harper（共7张）
+- Whitney（共26张）
+- Landry（共4张）
+- Kylar（共28张）
+- Darryl（共12张）
+- Briar（共10张）
+- Sirris（共6张）
+- Robin（共24张）
+- Eden（共20张）
+- Quinn（共4张）
+- River（共4张）
+- Winter（共8张）
+- Leighton（共12张）
+- Avery（共20张）
+- Niki（共4张）
+
+</details>
 
 ### 问题反馈
 
