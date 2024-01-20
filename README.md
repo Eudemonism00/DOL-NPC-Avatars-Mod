@@ -8,13 +8,19 @@
 
 ### 使用说明
 
+#### 版本说明
+
+- NPC Avatars Mod (SF)：简易框架版
+
+- NPC Avatars Mod：临时版，可单独加载无需简易框架，如果SF版出现问题则选择该版本
+
 #### 必须下载
 
 - 带有Modloader的游戏本体（用于加载mod）
 
 - Simple Frameworks（必备前置）
 
-- NPC Avatars Mod (SF)或NPC Avatars Mod (SF for lower version)（mod本体，点击右边release下载）
+- NPC Avatars Mod (SF)（mod本体，点击右边release下载）
 
 #### 相关链接
 
@@ -27,18 +33,6 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 #### 加载顺序
 
 首先加载简易框架（Simple Frameworks），再加载NPC Avatars Mod (SF)。
-
-#### 版本说明
-
-- NPC Avatars Mod (SF)：适用于0.4.5以上的版本
-
-- NPC Avatars Mod (SF for lower version)：适用于0.4.5以下的版本（如0.4.3.3）
-
-如果加载mod后游戏社交页面爆红或罗宾头像无法显示，请尝试SF for lower version
-
-- NPC Avatars Mod/NPC Avatars Mod low version：临时版，可单独加载无需简易框架
-
-优先选择SF版，临时版仅作为备选项。
 
 ### 问题反馈
 
