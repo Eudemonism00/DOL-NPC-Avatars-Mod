@@ -38,7 +38,7 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 
 <details>
 
-<summary>截止到v0.8.0</summary>
+<summary>截止到v0.9.0</summary>
 
 - Alex（共24张）
 - Remy（共14张）
@@ -62,6 +62,9 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 - Leighton（共12张）
 - Avery（共20张）
 - Niki（共4张）
+- Ivory Wraith（共12张）
+- Great Hawk（共12张）
+- Mason（共12张）
 
 如果角色显示不全，请尝试更换版本
 
