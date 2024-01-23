@@ -1,6 +1,6 @@
 # NPC Avatars Mod
 
-(Sorry my English is not good, this note is mostly done by machine translation. If you have any questions, please contact me.)  
+*(Sorry my English is not good, this note is mostly done by machine translation. If you have any questions, please contact me.)*
 
 After installing this mod, you will be able to see the avatars of characters in social box. The character's expression will change depending on the perception of the PC. Some characters have different looks depending on gender and style.
 
@@ -19,11 +19,11 @@ The mod (including pictures and codes) are freely used within the scope of DoL, 
 
 ### Must download
 
-- 带有Modloader的游戏本体（用于加载mod）
+- DoL with Modloader *(For loading the mod)*
 
-- Simple Frameworks（必备前置）
+- Simple Frameworks *(Required pre-mod)*
 
-- NPC Avatars Mod (SF)（mod本体，点击右边release下载）
+- NPC Avatars Mod (SF) *(mod, click release to download)*
 
 ### Related links
 
