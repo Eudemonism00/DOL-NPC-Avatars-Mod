@@ -1,4 +1,4 @@
-# NPC Avatars Mod
+# NPC Avatars Mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
 
 *(Sorry my English is not good, this note is mostly done by machine translation. If you have any questions, please contact me.)*
 
