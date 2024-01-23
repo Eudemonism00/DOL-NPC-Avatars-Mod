@@ -34,6 +34,8 @@
 
 首先加载简易框架（Simple Frameworks），再加载NPC Avatars Mod (SF)。
 
+如果你使用临时版，直接加载NPC Avatars Mod，不需要简易框架。
+
 ## 已实装角色
 
 <details>
