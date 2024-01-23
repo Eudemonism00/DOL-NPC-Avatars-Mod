@@ -4,14 +4,14 @@ After installing this mod, you will be able to see the avatars of characters in 
 
 The game does not give the specific appearance of the character, the mod is just a fanart, please do not mistake it for official appearances.
 
-模组（包括图片和代码）在DoL相关范围内自由使用，可二改二转；如果你想做一个类似功能也没问题，不需要问我。如果要二改或整合，请务必保留“图像说明”部分，或者在游戏内其他地方标注。
+The mod (including pictures and codes) are freely used within the scope of DoL, and can be modified or reproduced. If you want to do a similar feature, that's fine, don't ask me. If you want to change or integrate, keep the "Image Instructions" section, or note it elsewhere in the game.
 
 
 ## Instructions
 
-### 版本说明
+### Different versions of the introduction
 
-- NPC Avatars Mod (SF)：简易框架版
+- NPC Avatars Mod (SF): Simple frameworks version
 
 - NPC Avatars Mod：临时版，可单独加载无需简易框架，如果SF版出现问题则选择该版本
 
