@@ -1,5 +1,6 @@
 # NPC Avatars Mod
 
+(Sorry my English is not good, this note is mostly done by machine translation. If you have any questions, please contact me.)  
 After installing this mod, you will be able to see the avatars of characters in social box. The character's expression will change depending on the perception of the PC. Some characters have different looks depending on gender and style.
 
 The game does not give the specific appearance of the character, the mod is just a fanart, please do not mistake it for official appearances.
@@ -71,6 +72,8 @@ modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
 
 </details>
 
-## 问题反馈
+## Problem feedback
 
-反馈群：832410983
+QQ group: 832410983
+
+Discord: 
