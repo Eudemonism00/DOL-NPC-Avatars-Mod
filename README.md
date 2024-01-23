@@ -16,19 +16,19 @@
 
 ### 必须下载
 
-- 带有Modloader的游戏本体（用于加载mod）
+- 带有Modloader的游戏本体 *（用于加载mod）*
 
-- Simple Frameworks（必备前置）
+- Simple Frameworks *（必备前置）*
 
-- NPC Avatars Mod (SF)（mod本体，点击右边release下载）
+- NPC Avatars Mod (SF) *（mod本体，点击右边release下载）*
 
 ### 相关链接
 
-modloader：https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader
+[modloader](https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader)
 
-汉化发布仓库：https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization （说明文档中包含mod加载方式）
+[汉化发布仓库](https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization) （说明文档中包含mod加载方式）
 
-简易框架：https://github.com/emicoto/DOLMods/releases
+[简易框架](https://github.com/emicoto/DOLMods/releases)
 
 ### 加载顺序
 
