@@ -14,6 +14,7 @@ The game does not give the specific appearance of the character, the mod is just
 
 The mod (including pictures and codes) are freely used within the scope of DoL, and can be modified or reproduced. If you want to do a similar feature, that's fine, don't ask me. If you want to change or integrate, keep the "Image Instructions" section, or note it elsewhere in the game.
 
+> Image Instructions: You have used the NPC Avatar Icon Mod. This mod is just a fanart. The game does not give the specific appearance of characters, please do not mistake it for the official appearance.
 
 ## Instructions
 
