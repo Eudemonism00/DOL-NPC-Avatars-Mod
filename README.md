@@ -1,5 +1,7 @@
 # NPC头像图标增添mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
 
+[English](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README-EN.md)
+
 安装后社交栏会有角色小头像，表情跟随态度文本变化，部分角色有不同性别或造型的差分。
 
 游戏并未给出角色的具体样貌，头像为本模组的二次创作，请不要将其误认为是官方形象。
