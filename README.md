@@ -2,7 +2,7 @@
 
 ---
 
-[**English ver.**](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README-EN.md)
+[**【English edition】**](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README-EN.md)
 
 ---
 
