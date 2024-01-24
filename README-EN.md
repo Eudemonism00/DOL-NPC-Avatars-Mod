@@ -1,5 +1,11 @@
 # NPC Avatars Mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
 
+---
+
+[**【简体中文版说明】**](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README.md)
+
+---
+
 *(Sorry my English is not good, this note is mostly done by machine translation. If you have any questions, please contact me.)*
 
 After installing this mod, you will be able to see the avatars of characters in social box. The character's expression will change depending on the perception of the PC. Some characters have different looks depending on gender and style.
