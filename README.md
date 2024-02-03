@@ -1,5 +1,4 @@
-# NPC头像图标增添mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
-
+# NPC头像图标增添mod
 ---
 
 [**【English edition】**](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README-EN.md)
@@ -48,7 +47,7 @@
 
 <details>
 
-<summary>截止到v0.9.0</summary>
+<summary>截止到v1.0.0</summary>
 
 - Alex（共24张）
 - Remy（共14张）
