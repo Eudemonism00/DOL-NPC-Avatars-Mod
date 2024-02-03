@@ -51,7 +51,7 @@
 
 - Alex（共24张）
 - Remy（共14张）
-- Gwylan（共1张）
+- Gwylan（共2张）
 - Wren（共14张）
 - Bailey（共2张）
 - Jordan（共3张）
