@@ -1,4 +1,4 @@
-# NPC Avatars Mod <img src="https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/wip.png">
+# NPC Avatars Mod 
 
 ---
 
@@ -50,11 +50,11 @@ If you are using the temporary version, you can directly load the NPC Avatars Mo
 
 <details>
 
-<summary>Up to v0.9.0</summary>
+<summary>Up to v1.0.0</summary>
 
 - Alex (24 pieces)
 - Remy (14 pieces)
-- Gwylan (1 pieces)
+- Gwylan (2 pieces)
 - Wren (14 pieces)
 - Bailey (2 pieces)
 - Jordan (3 pieces)
@@ -77,6 +77,13 @@ If you are using the temporary version, you can directly load the NPC Avatars Mo
 - Ivory Wraith (12 pieces)
 - Great Hawk (12 pieces)
 - Mason (12 pieces)
+- Black Wolf (20 pieces)
+- Sam (6 pieces)
+- Charlie (6 pieces)
+- Morgan (14 pieces)
+- Zephyr (6 pieces)
+- Doren (4 pieces)
+
 
 If not all characters are displayed, change the version.
 
