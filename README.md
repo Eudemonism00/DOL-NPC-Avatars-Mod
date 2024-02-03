@@ -75,6 +75,12 @@
 - Ivory Wraith（共12张）
 - Great Hawk（共12张）
 - Mason（共12张）
+- Black Wolf（共20张）
+- Sam（共6张）
+- Charlie（共6张）
+- Morgan（共14张）
+- Zephyr（共6张）
+- Doren（共4张）
 
 如果角色显示不全，请尝试更换版本
 
