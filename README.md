@@ -81,7 +81,7 @@
 
 - 带有Modloader的游戏本体 *（用于加载mod）*
 
-- Simple Frameworks *（必备前置）*
+- Simple Frameworks *（前置）*
 
 - NPC Avatars Mod (SF) *（mod本体，点击右边release下载）*
 
@@ -107,7 +107,9 @@ Discord：Eudemonism00
 
 ## 致谢
 
-感谢Modloader、模组编写助手与作者老师[Lyoko-Jeremie](https://github.com/Lyoko-Jeremie)、[Number_Sir](https://github.com/NumberSir)让这个mod成为可能
+感谢Vrelnir，<3<3<3
+
+感谢[Lyoko-Jeremie](https://github.com/Lyoko-Jeremie)老师编写了Modloader、[Number_Sir](https://github.com/NumberSir)老师制作了模组编写助手，你们让这个mod成为可能
 
 感谢[狐千月](https://github.com/emicoto)老师提供简易框架还有代码指导，如果大家有什么想法也可以尝试一下简易框架！
 
@@ -117,4 +119,4 @@ Discord：Eudemonism00
 
 感谢[mae](https://github.com/Maenoko)老师（是mae还是mea("▔□▔)），
 
-还有我的更多朋友们，谢谢你们的支持，爱你们！
+还有我的更多朋友们，包括屏幕前的你，谢谢你们的支持，爱你们！
