@@ -19,8 +19,14 @@ https://tieba.baidu.com/home/main?id=tb.1.e346c92e.63y3gzjx1XT9gyyrNEQbRg&ie=utf
 Use the following paragraph:
 
 ```
-<<link [[删除SF版图像数据|$passage]]>><<run delete $robinmodicon>><<run delete 
-$whitneymodicon>><<run delete $kylarmodicon>><<run delete $sydneymodicon>><<run delete $alexmodicon>><<run delete $ghmodicon>><<run delete $bwmodicon>><<run delete $averymodicon>><<run delete $edenmodicon>><<run delete $baileymodicon>><<run delete $briarmodicon>><<run delete $charliemodicon>><<run delete $darrylmodicon>><<run delete $dorenmodicon>><<run delete $gwylanmodicon>><<run delete $harpermodicon>><<run delete $jordanmodicon>><<run delete $landrymodicon>><<run delete $leightonmodicon>><<run delete $masonmodicon>><<run delete $morganmodicon>><<run delete $rivermodicon>><<run delete $sammodicon>><<run delete $sirrismodicon>><<run delete $wintermodicon>><<run delete $nikimodicon>><<run delete $quinnmodicon>><<run delete $remymodicon>><<run delete $wrenmodicon>><<run delete $zephyrmodicon>><</link>>
+<<link [[删除SF版图像数据|$passage]]>><<run delete $robinmodicon>><<run delete $whitneymodicon>>
+<<run delete $kylarmodicon>><<run delete $sydneymodicon>><<run delete $alexmodicon>><<run delete $ghmodicon>>
+<<run delete $bwmodicon>><<run delete $averymodicon>><<run delete $edenmodicon>><<run delete $baileymodicon>>
+<<run delete $briarmodicon>><<run delete $charliemodicon>><<run delete $darrylmodicon>><<run delete $dorenmodicon>>
+<<run delete $gwylanmodicon>><<run delete $harpermodicon>><<run delete $jordanmodicon>><<run delete $landrymodicon>>
+<<run delete $leightonmodicon>><<run delete $masonmodicon>><<run delete $morganmodicon>><<run delete $rivermodicon>>
+<<run delete $sammodicon>><<run delete $sirrismodicon>><<run delete $wintermodicon>><<run delete $nikimodicon>>
+<<run delete $quinnmodicon>><<run delete $remymodicon>><<run delete $wrenmodicon>><<run delete $zephyrmodicon>><</link>>
 ```
 
 
