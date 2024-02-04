@@ -110,6 +110,8 @@ Discord: eudemonism00
 
 ## Acknowledgements
 
+Vrelnir, <3<3<3
+
 [Lyoko-Jeremie](https://github.com/Lyoko-Jeremie) for writing the JML, and [Number_Sir](https://github.com/NumberSir) for making the MCH, you made this mod a possible.
 
 [Lune](https://github.com/emicoto) for providing the simple framework and the code guide. If you have any ideas, you can also try the simple framework!
