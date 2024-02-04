@@ -98,7 +98,22 @@
 
 如果你使用临时版，直接加载NPC Avatars Mod，不需要简易框架。
 
-
 ## 问题反馈
 
 反馈群：832410983
+
+Discord：Eudemonism00
+
+## 致谢
+
+感谢Modloader和模组编写助手与作者老师[Lyoko-Jeremie](https://github.com/Lyoko-Jeremie)、[Number_Sir](https://github.com/NumberSir)让这个mod成为可能
+
+感谢[狐千月](https://github.com/emicoto)老师提供简易框架还有代码指导，如果大家有什么想法也可以尝试一下简易框架！
+
+感谢[鲤鱼旗](https://github.com/koooooiCarp)老师的bug反馈和代码指导
+
+感谢[miyako4828](https://github.com/miyakoAki4828)老师在说明书编写上的帮助
+
+感谢[mae](https://github.com/Maenoko)老师（是mae还是mea("▔□▔)），
+
+还有我的更多朋友们，谢谢你们的支持，爱你们！
