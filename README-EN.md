@@ -4,6 +4,8 @@
 
 [**【简体中文版说明】**](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README.md)
 
+[**【Save sorting help】**](https://github.com/Eudemonism00/DOL-npc-avatars-mod/blob/main/Save%20sorting%20help.md)
+
 ---
 
 *(Sorry my English is not good, this note is mostly done by machine translation. If you have any questions, please contact me.)*
