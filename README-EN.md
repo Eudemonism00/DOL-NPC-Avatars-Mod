@@ -8,6 +8,8 @@
 
 *(Sorry my English is not good, this note is mostly done by machine translation. If you have any questions, please contact me.)*
 
+## Description
+
 After installing this mod, you will be able to see the avatars of characters in social box. The character's expression will change depending on the perception of the PC. Some characters have different looks depending on gender and style.
 
 The game does not give the specific appearance of the character, the mod is just a fanart, please do not mistake it for official appearances.
@@ -16,37 +18,7 @@ The mod (including pictures and codes) are freely used within the scope of DoL, 
 
 > Image Instructions: You have used the NPC Avatars Mod. This mod is just a fanart. The game does not give the specific appearance of characters, please do not mistake it for the official appearance.
 
-## Instructions
-
-### Different versions of the introduction
-
-- NPC Avatars Mod (SF): Simple frameworks version
-
-- NPC Avatars Mod: Temporary version, which can be loaded separately without the simple framework. If the SF version has bugs, choose this version.
-
-### Must download
-
-- DoL with Modloader *(For loading the mod)*
-
-- Simple Frameworks *(Required pre-mod)*
-
-- NPC Avatars Mod (SF) *(mod, click release to download)*
-
-### Related links
-
-[modloader](https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader)
-
-[DoL Chinese Localization](https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization) (The README document contains the mod loading method)
-
-[Simple Frameworks](https://github.com/emicoto/DOLMods/releases)
-
-### Loading sequence
-
-First load Simple Frameworks, then load NPC Avatars Mod (SF).
-
-If you are using the temporary version, you can directly load the NPC Avatars Mod without the need for Simple Frameworks.
-
-## The finished character image
+### The finished character image
 
 <details>
 
@@ -89,8 +61,63 @@ If not all characters are displayed, change the version.
 
 </details>
 
+### Sample
+
+<details>
+
+<summary>Click to expand image</summary>
+
+![sample1](https://github.com/Eudemonism00/DOL-npcicon-mods/assets/152267917/c0359926-1178-42a1-8011-522da5e9b4fa)
+![sample2](https://github.com/Eudemonism00/DOL-npcicon-mods/assets/152267917/e40af326-e80f-4624-8aad-bc5713c71a9d)
+
+</details>
+
+## Instructions
+
+### Different versions of the introduction
+
+- NPC Avatars Mod (SF): Simple frameworks version
+
+- NPC Avatars Mod: Temporary version, which can be loaded separately without the simple framework. If the SF version has bugs, choose this version.
+
+### Must download
+
+- DoL with Modloader *(For loading the mod)*
+
+- Simple Frameworks *(pre-mod)*
+
+- NPC Avatars Mod (SF) *(mod, click release to download)*
+
+### Related links
+
+[modloader](https://github.com/Lyoko-Jeremie/sugarcube-2-ModLoader)
+
+[DoL Chinese Localization](https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization) (The README document contains the mod loading method)
+
+[Simple Frameworks](https://github.com/emicoto/DOLMods/releases)
+
+### Loading sequence
+
+First load Simple Frameworks, then load NPC Avatars Mod (SF).
+
+If you are using the temporary version, you can directly load the NPC Avatars Mod without the need for Simple Frameworks.
+
 ## Problem feedback
 
 QQ group: 832410983
 
 Discord: eudemonism00
+
+## Acknowledgements
+
+[Lyoko-Jeremie](https://github.com/Lyoko-Jeremie) for writing the JML, and [Number_Sir](https://github.com/NumberSir) for making the MCH, you made this mod a possible.
+
+[Lune](https://github.com/emicoto) for providing the simple framework and the code guide. If you have any ideas, you can also try the simple framework!
+
+[Koinobori](https://github.com/koooooiCarp) for the bug feedback and code guidance.
+
+[miyako4828](https://github.com/miyakoAki4828) for her help in writing the manual.
+
+[mae](https://github.com/Maenoko)(mae or mea?("▔□▔)),
+
+And more of my friends, including you in front of the screen. Thank you for your support, love you!
