@@ -59,8 +59,14 @@
 
 ### 示例
 
+<details>
+
+<summary>点击展开图片</summary>
+
 ![sample1](https://github.com/Eudemonism00/DOL-npcicon-mods/assets/152267917/c0359926-1178-42a1-8011-522da5e9b4fa)
 ![sample2](https://github.com/Eudemonism00/DOL-npcicon-mods/assets/152267917/e40af326-e80f-4624-8aad-bc5713c71a9d)
+
+</details>
 
 ## 使用说明
 
