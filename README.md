@@ -1,4 +1,5 @@
 # NPC头像图标增添mod
+
 ---
 
 [**【English edition】**](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README-EN.md)
@@ -106,7 +107,7 @@ Discord：Eudemonism00
 
 ## 致谢
 
-感谢Modloader和模组编写助手与作者老师[Lyoko-Jeremie](https://github.com/Lyoko-Jeremie)、[Number_Sir](https://github.com/NumberSir)让这个mod成为可能
+感谢Modloader、模组编写助手与作者老师[Lyoko-Jeremie](https://github.com/Lyoko-Jeremie)、[Number_Sir](https://github.com/NumberSir)让这个mod成为可能
 
 感谢[狐千月](https://github.com/emicoto)老师提供简易框架还有代码指导，如果大家有什么想法也可以尝试一下简易框架！
 
