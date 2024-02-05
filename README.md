@@ -66,9 +66,9 @@
 
 <summary>点击展开图片</summary>
 
-![sample1](https://github.com/Eudemonism00/DOL-npc-avatars-mod/assets/152267917/d1050cf3-40f3-47fb-8f73-60501e5f4249)
+![sample1](https://github.com/Eudemonism00/DOL-npc-avatars-mod/assets/152267917/b4ad653b-ca87-4012-bed3-18e0b2f752b5)
 
-![sample2](https://github.com/Eudemonism00/DOL-npc-avatars-mod/assets/152267917/adf6354c-6107-4c94-8f61-7f307cc521bb)
+![sample2](https://github.com/Eudemonism00/DOL-npc-avatars-mod/assets/152267917/5d9b9752-7d8c-467e-8089-9ec60b8422df)
 
 </details>
 
