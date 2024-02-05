@@ -68,7 +68,7 @@
 
 ![sample1](https://github.com/Eudemonism00/DOL-npc-avatars-mod/assets/152267917/d1050cf3-40f3-47fb-8f73-60501e5f4249)
 
-![sample2](https://github.com/Eudemonism00/DOL-npcicon-mods/assets/152267917/e40af326-e80f-4624-8aad-bc5713c71a9d)
+![sample2](https://github.com/Eudemonism00/DOL-npc-avatars-mod/assets/152267917/adf6354c-6107-4c94-8f61-7f307cc521bb)
 
 </details>
 
