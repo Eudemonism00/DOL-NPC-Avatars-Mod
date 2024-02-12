@@ -24,24 +24,24 @@ The mod (including pictures and codes) are freely used within the scope of DoL, 
 
 <details>
 
-<summary>Up to v1.0.0</summary>
+<summary>Up to v1.1.0</summary>
 
 - Alex (24 pieces)
 - Remy (14 pieces)
 - Gwylan (2 pieces)
 - Wren (14 pieces)
-- Bailey (2 pieces)
+- Bailey (6 pieces)
 - Jordan (3 pieces)
 - Sydney (112 pieces)
 - Harper (7 pieces)
-- Whitney (26 pieces)
+- Whitney (28 pieces)
 - Landry (4 pieces)
-- Kylar (28 pieces)
+- Kylar (32 pieces)
 - Darryl (12 pieces)
 - Briar (10 pieces)
 - Sirris (6 pieces)
-- Robin (24 pieces)
-- Eden (20 pieces)
+- Robin (29 pieces)
+- Eden (24 pieces)
 - Quinn (4 pieces)
 - River (4 pieces)
 - Winter (8 pieces)
