@@ -74,6 +74,18 @@ If not all characters are displayed, change the version.
 
 </details>
 
+### Tips
+
+<details>
+
+**<summary>SPOILER</summary>**
+
+- You can summon Ivory Wraith, or incarnations of the makers, in the poster in your bedroom.
+- Just as they actually show it, Eden on the social box can get restless if you've been gone too long.
+- When Mickey shows up next to Landry, it indicates that they can see you now (for pub fame mission).
+
+</details>
+
 ## Instructions
 
 ### Different versions of the introduction
