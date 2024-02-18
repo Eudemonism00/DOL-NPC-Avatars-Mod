@@ -78,7 +78,7 @@ If not all characters are displayed, change the version.
 
 <details>
 
-**<summary>SPOILER</summary>**
+***<summary>SPOILER</summary>***
 
 - You can summon Ivory Wraith, or incarnations of the makers, in the poster in your bedroom.
 - Just as they actually show it, Eden on the social box can get restless if you've been gone too long.
