@@ -22,24 +22,24 @@
 
 <details>
 
-<summary>截止到v1.0.0</summary>
+<summary>截止到v1.1.0</summary>
 
 - Alex（共24张）
 - Remy（共14张）
 - Gwylan（共2张）
 - Wren（共14张）
-- Bailey（共2张）
+- Bailey（共6张）
 - Jordan（共3张）
 - Sydney（共112张）
 - Harper（共7张）
-- Whitney（共26张）
+- Whitney（共28张）
 - Landry（共4张）
-- Kylar（共28张）
+- Kylar（共32张）
 - Darryl（共12张）
 - Briar（共10张）
 - Sirris（共6张）
-- Robin（共24张）
-- Eden（共20张）
+- Robin（共29张）
+- Eden（共24张）
 - Quinn（共4张）
 - River（共4张）
 - Winter（共8张）
