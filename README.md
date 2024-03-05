@@ -22,39 +22,39 @@
 
 <details>
 
-<summary>截止到v1.1.0</summary>
+<summary>截止到v1.2.0</summary>
 
-- Alex（共24张）
-- Remy（共14张）
-- Gwylan（共2张）
-- Wren（共14张）
-- Bailey（共6张）
-- Jordan（共3张）
-- Sydney（共112张）
-- Harper（共7张）
-- Whitney（共28张）
-- Landry（共4张）
-- Kylar（共32张）
-- Darryl（共12张）
-- Briar（共10张）
-- Sirris（共6张）
-- Robin（共29张）
-- Eden（共24张）
-- Quinn（共4张）
-- River（共4张）
-- Winter（共8张）
-- Leighton（共12张）
-- Avery（共20张）
-- Niki（共4张）
-- Ivory Wraith（共12张）
-- Great Hawk（共12张）
-- Mason（共12张）
-- Black Wolf（共20张）
-- Sam（共6张）
-- Charlie（共6张）
-- Morgan（共14张）
-- Zephyr（共6张）
-- Doren（共4张）
+- Alex（12种共24P）
+- Remy（7种共14P）
+- Gwylan（2种共2P）
+- Wren（8种共16P）
+- Bailey（3种共6P）
+- Jordan（3种共3P）
+- Sydney（15种共60P）
+- Harper（7种共7P）
+- Whitney（14种共28P）
+- Landry（2种共4P）
+- Kylar（16种共32P）
+- Darryl（6种共12P）
+- Briar（5种共10P）
+- Sirris（3种共6P）
+- Robin（15种共29P）
+- Eden（15种共30P）
+- Quinn（2种共4P）
+- River（2种共4P）
+- Winter（4种共8P）
+- Leighton（6种共12P）
+- Avery（10种共20P）
+- Niki（2种共4P）
+- Ivory Wraith（13种共13P）
+- Great Hawk（12种共12P）
+- Mason（6种共12P）
+- Black Wolf（10种共20P）
+- Sam（3种共6P）
+- Charlie（3种共6P）
+- Morgan（7种共14P）
+- Zephyr（3种共6P）
+- Doren（2种共4P）
   
 如果角色显示不全，请尝试更换版本
 
