@@ -2,7 +2,9 @@
 
 ---
 
- | [**【English edition】**](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README-EN.md) | [**【存档整理帮助】**](https://github.com/Eudemonism00/DOL-npc-avatars-mod/blob/main/Save%20sorting%20help.md) | [**【Discord发布原帖】**](https://discord.com/channels/675158131688603721/1205072428301156372) | [**【贴吧发布原帖】**](https://tieba.baidu.com/p/8929352980) | 
+ | [**English edition**](https://github.com/Eudemonism00/DOL-npcicon-mods/blob/main/README-EN.md)
+ | [**存档整理帮助**](https://github.com/Eudemonism00/DOL-npc-avatars-mod/blob/main/Save%20sorting%20help.md) |
+ | [**Discord发布帖**](https://discord.com/channels/675158131688603721/1205072428301156372) | [**贴吧发布帖**](https://tieba.baidu.com/p/8929352980) | 
 
 ---
 
