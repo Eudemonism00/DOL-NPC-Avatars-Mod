@@ -112,14 +112,18 @@ Discord：Eudemonism00
 
 感谢Vrelnir，<3<3<3
 
-感谢[Lyoko-Jeremie](https://github.com/Lyoko-Jeremie)老师编写了Modloader、[Number_Sir](https://github.com/NumberSir)老师制作了模组编写助手，你们让这个mod成为可能
+感谢[Lyoko-Jeremie](https://github.com/Lyoko-Jeremie)编写了Modloader、[Number_Sir](https://github.com/NumberSir)制作了模组编写助手，你们让这个mod成为可能
 
-感谢[狐千月](https://github.com/emicoto)老师提供简易框架还有代码指导，如果大家有什么想法也可以尝试一下简易框架！
+感谢[狐千月](https://github.com/emicoto)提供简易框架还有代码指导，如果大家有什么想法也可以尝试一下简易框架！
 
-感谢[鲤鱼旗](https://github.com/koooooiCarp)老师的bug反馈和代码指导
+感谢[鲤鱼旗](https://github.com/koooooiCarp)的bug反馈和代码指导
 
-感谢[miyako4828](https://github.com/miyakoAki4828)老师在说明书编写上的帮助
+感谢[miyako4828](https://github.com/miyakoAki4828)在说明书编写上的帮助
 
-感谢[mae](https://github.com/Maenoko)老师（是mae还是mea("▔□▔)），
+感谢[mae](https://github.com/Maenoko)（是mae还是mea("▔□▔)），
 
 还有我的更多朋友们，包括屏幕前的你，谢谢你们的支持，爱你们！
+
+## 友情链接
+
+[苯环](https://github.com/Nephthelana)（帮我找回了账号的人） - [更多恋人模组](https://github.com/Nephthelana/DoL-More-Love-Interests-Mod)
