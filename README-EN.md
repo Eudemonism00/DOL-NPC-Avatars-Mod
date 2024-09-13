@@ -20,49 +20,6 @@ The mod (including pictures and codes) are freely used within the scope of DoL, 
 
 > Image Instructions: You have used the NPC Avatars Mod. This mod is just a fanart. The game does not give the specific appearance of characters, please do not mistake it for the official appearance.
 
-### The finished character image
-
-<details>
-
-<summary>Up to v1.1.0</summary>
-
-- Alex (24 pieces)
-- Remy (14 pieces)
-- Gwylan (2 pieces)
-- Wren (14 pieces)
-- Bailey (6 pieces)
-- Jordan (3 pieces)
-- Sydney (112 pieces)
-- Harper (7 pieces)
-- Whitney (28 pieces)
-- Landry (4 pieces)
-- Kylar (32 pieces)
-- Darryl (12 pieces)
-- Briar (10 pieces)
-- Sirris (6 pieces)
-- Robin (29 pieces)
-- Eden (24 pieces)
-- Quinn (4 pieces)
-- River (4 pieces)
-- Winter (8 pieces)
-- Leighton (12 pieces)
-- Avery (20 pieces)
-- Niki (4 pieces)
-- Ivory Wraith (12 pieces)
-- Great Hawk (12 pieces)
-- Mason (12 pieces)
-- Black Wolf (20 pieces)
-- Sam (6 pieces)
-- Charlie (6 pieces)
-- Morgan (14 pieces)
-- Zephyr (6 pieces)
-- Doren (4 pieces)
-
-
-If not all characters are displayed, change the version.
-
-</details>
-
 ### Sample
 
 <details>
@@ -137,3 +94,7 @@ Vrelnir, <3<3<3
 [mae](https://github.com/Maenoko)(mae or mea?("▔□▔)),
 
 And more of my friends, including you in front of the screen. Thank you for your support, love you!
+
+## Friendship links
+
+[Nephthelana](https://github.com/Nephthelana)(The guy who got my account back) - [More Love Interests Mod](https://github.com/Nephthelana/DoL-More-Love-Interests-Mod)
