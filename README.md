@@ -34,17 +34,17 @@
 
 ### 版本说明
 
-- NPC Avatars Mod (SF)：简易框架版
+- NPC Avatars Mod：可单独加载无需简易框架，如果SF版出现问题则选择该版本
+- ~~NPC Avatars Mod (SF)：简易框架版~~
 
-- NPC Avatars Mod：临时版，可单独加载无需简易框架，如果SF版出现问题则选择该版本
+**因为简易框架不适配新版本，停止更新SF版，请直接下载普通版。**
 
 ### 必须下载
 
+- NPC Avatars Mod *（mod本体，点击右边release下载）*
 - 带有Modloader的游戏本体 *（用于加载mod）*
-
-- Simple Frameworks *（前置）*
-
-- NPC Avatars Mod (SF) *（mod本体，点击右边release下载）*
+- ~~Simple Frameworks （前置）~~
+- ~~NPC Avatars Mod (SF) （mod本体，点击右边release下载）~~
 
 ### 相关链接
 
@@ -56,7 +56,7 @@
 
 ### 加载顺序
 
-首先加载简易框架（Simple Frameworks），再加载NPC Avatars Mod (SF)。
+~~首先加载简易框架（Simple Frameworks），再加载NPC Avatars Mod (SF)。~~
 
 如果你使用临时版，直接加载NPC Avatars Mod，不需要简易框架。
 
