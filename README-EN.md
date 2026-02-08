@@ -47,17 +47,21 @@ The mod (including pictures and codes) are freely used within the scope of DoL, 
 
 ### Different versions of the introduction
 
-- NPC Avatars Mod (SF): Simple frameworks version
+**Because the SCML MODFramework is not compatible with the new version, updates for the SF edition have been discontinued. Please download the standard edition instead.**
 
 - NPC Avatars Mod: Temporary version, which can be loaded separately without the simple framework. If the SF version has bugs, choose this version.
 
+- ~~NPC Avatars Mod (SF): Simple frameworks version~~
+
 ### Must download
+
+- NPC Avatars Mod (mod, click release to download)
 
 - DoL with Modloader *(For loading the mod)*
 
-- Simple Frameworks *(pre-mod)*
+- ~~Simple Frameworks (pre-mod)~~
 
-- NPC Avatars Mod (SF) *(mod, click release to download)*
+- ~~NPC Avatars Mod (SF) (mod, click release to download)~~
 
 ### Related links
 
@@ -69,7 +73,7 @@ The mod (including pictures and codes) are freely used within the scope of DoL, 
 
 ### Loading sequence
 
-First load Simple Frameworks, then load NPC Avatars Mod (SF).
+~~First load Simple Frameworks, then load NPC Avatars Mod (SF).~~
 
 If you are using the temporary version, you can directly load the NPC Avatars Mod without the need for Simple Frameworks.
 
