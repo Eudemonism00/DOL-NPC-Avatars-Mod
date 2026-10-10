@@ -1,0 +1,65 @@
+{
+  "name": "NPC Avatars Mod",
+  "version": "1.5.0",
+  "styleFileList": [],
+  "scriptFileList": [],
+  "tweeFileList": [
+    "game/base-system/NPCAvatarIcon.twee"
+  ],
+  "imgFileList": [
+  ],
+  "additionFile": [
+    "game/overworld-town/loc-home/bedroom-poster-icon.txt",
+    "README.md"
+  ],
+  "addonPlugin": [
+    {
+      "modName": "TweeReplacer",
+      "addonName": "TweeReplacerAddon",
+      "modVersion": "1.0.0",
+      "params": [
+        {
+          "passage": "Widgets Named Npcs",
+          "findString": ">>\n\t\t<br>",
+          "replace": ">><<relationshipmodicon>>\n\t\t<br>",
+          "_comment": "<<relationshiptext>>被简易框架替换了"
+        },
+        {
+          "passage": "overlayReplace",
+          "findString": "<<social>><</replace>>\n\t\t<</button>>\n\t\t<<colourCodes>>",
+          "replace": "<<social>><</replace>>\n\t\t<</button>>\n\t\t<<colourCodes>> | <<imageinstructions>>"
+        },
+        {
+          "passage": "Bedroom",
+          "findString": "<<set _poster to _premadePoster ? \"poster_\" + _furniture.poster.name : ['dol', 'degrees of lewdity'].some(e => _furniture.poster.name.toLowerCase().includes(e)) ? \"poster_dol\" : \"poster\">>",
+          "replaceFile": "game/overworld-town/loc-home/bedroom-poster-icon.txt"
+        },
+        {
+          "passage": "Widgets",
+          "findString": "<<npcrelationship \"Ivory Wraith\">>",
+          "replace": "<<npcrelationship \"Ivory Wraith\">><<mimicmodicon>>"
+        },
+        {
+          "passage": "Options Overlay",
+          "findString": "<</widget>>\n\n<<widget \"setupCombatLightingDemo\">>",
+          "replace": "<<optionscharacterstylesContent>>\n<</widget>>\n\n<<widget \"setupCombatLightingDemo\">>"
+        }
+      ]
+    },
+    {
+      "modName": "ModLoader DoL ImageLoaderHook",
+      "addonName": "ImageLoaderAddon",
+      "modVersion": "2.0.0"
+    }
+  ],
+  "dependenceInfo": [
+    {
+      "modName": "TweeReplacer",
+      "version": ">=1.0.0"
+    },
+    {
+      "modName": "ModLoader DoL ImageLoaderHook",
+      "version": "^2.3.0"
+    }
+  ]
+}

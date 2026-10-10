@@ -1,0 +1,23 @@
+:: NPCAvatarsMod_jiala
+<<switch _npc>>
+    <<case "Ivory Wraith">>
+        <<if $wraith>>
+            <<if _rngWraithLineChance is 1>>
+            <<else>>
+                <<if $wraith.state is "haunt" or $wraith.state is "despair">>
+                        <img class="icon" @src="'img/misc/icon/social/jiala/iw/iw_haunt_' + C.npc['Ivory Wraith'].gender + '.png'">
+                <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/jiala/iw/iw_active_' + C.npc['Ivory Wraith'].gender + '.png'">
+                <</if>>
+            <</if>>
+        <</if>>
+<</switch>>
+
+:: NPCAvatarsMod_Mimic_jiala
+<<if $wraith.mimic isnot "">>
+    <<switch $wraith.mimic>>
+        /* 未来画了拟态图再补，没画直接自动用原版 */
+        <<default>>
+            <<include "NPCAvatarsMod_Mimic_Default">>
+    <</switch>>
+<</if>>

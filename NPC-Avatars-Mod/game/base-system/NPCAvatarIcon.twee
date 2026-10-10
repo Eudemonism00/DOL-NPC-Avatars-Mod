@@ -1,0 +1,36 @@
+:: NPCAvatarsMod-Router [widget]
+
+/* 1. 普通关系网/NPC头像路由器 */
+<<widget "relationshipmodicon">>
+	<<if _npc>>
+		<<set _resolvedStyle to CharStyleConfig.getStyle(_npc)>>
+		<<switch _resolvedStyle>>
+			<<case "jiala">>
+				<<include "NPCAvatarsMod_jiala">>
+			<<case "maplebirch">>
+				<<include "NPCAvatarsMod_Maplebirch">>
+			<<case "cici">>
+				<<include "NPCAvatarsMod_Cici">>
+			<<case "default">>
+				<<include "NPCAvatarsMod_Default">>
+		<</switch>>
+	<</if>>
+<</widget>>
+
+/* 2. 象牙幽灵拟态头像路由器 */
+<<widget "mimicmodicon">>
+	<<if $wraith and $wraith.mimic isnot "">>
+		<!-- 获取被拟态NPC当前生效的画风 -->
+		<<set _mimicStyle to CharStyleConfig.getStyle($wraith.mimic)>>
+		<<switch _mimicStyle>>
+			<<case "jiala">>
+				<<include "NPCAvatarsMod_Mimic_jiala">>
+			<<case "maplebirch">>
+				<<include "NPCAvatarsMod_Mimic_Maplebirch">>
+			<<case "cici">>
+				<<include "NPCAvatarsMod_Mimic_Cici">>
+			<<default>>
+				<<include "NPCAvatarsMod_Mimic_Default">>
+		<</switch>>
+	<</if>>
+<</widget>>

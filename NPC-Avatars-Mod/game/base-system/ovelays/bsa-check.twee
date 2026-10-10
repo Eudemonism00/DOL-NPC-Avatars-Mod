@@ -1,0 +1,35 @@
+:: ImageInstructions [widget]
+
+<<widget "imageinstructions">>
+    <<if window.addonBeautySelectorAddon
+        && Array.isArray(window.addonBeautySelectorAddon.typeOrderUsed)
+        && !window.addonBeautySelectorAddon.typeOrderUsed.some(t => t.type === "converted-NPC Avatars Mod")>>
+
+        <<if window.modUtils.getMod('ModI18N')>>
+            <mouse class="tooltip-small linkBlue">
+                <span class="red">为什么没有图像？</span>
+                <span>您尚未启用模组图像，请打开Mod管理器，在“BeautySelectorAddon 启用及排序管理”选中此Mod，然后点击“启用选中的Type”，重新载入后即可看到图像。</span>
+            </mouse>
+        <<else>>
+            <mouse class="tooltip-small linkBlue">
+                <span class="red">Why are there no images?</span>
+                <span>You haven’t enabled mod images yet. Please open the ModLoader Manager, select this mod under “BeautySelectorAddon Type Enable And Order Manager”, then click “Enable Selected Type”. Reload the game and the images will appear.</span>
+            </mouse>
+        <</if>>
+
+    <<else>>
+
+        <<if window.modUtils.getMod('ModI18N')>>
+            <mouse class="tooltip-small linkBlue">
+                图像说明
+                <span>您已使用NPC头像增添模组。游戏并未提供各位角色的具体形象，头像为模组二次创作，仅供爱好者交流，请勿将其当作官方形象。</span>
+            </mouse>
+        <<else>>
+            <mouse class="tooltip-small linkBlue">
+                Image Instructions
+                <span>You are using the NPC Avatars Mod. The character portraits are fan-made, as the game does not provide official appearances for these characters. Please do not consider them to be official representations.</span>
+            </mouse>
+        <</if>>
+
+    <</if>>
+<</widget>>

@@ -1,0 +1,916 @@
+:: NPCAvatarsMod_Default
+
+<<switch _npc>>
+    <<case Robin>>
+        <<if $robinmissing is 0 and $halloween is 1 and Time.monthDay is 31 and Time.hour gte 16 and Time.hour lt 19>>
+            <<if $halloween_robin_costume is "witch">>
+                <img class="icon" @src="'img/misc/icon/social/default/robin/robin_witch_' + C.npc.Robin.pronoun + '.png'">
+            <<elseif $halloween_robin_costume is "vampire">>
+                <img class="icon" @src="'img/misc/icon/social/default/robin/robin_vampire_' + C.npc.Robin.pronoun + '.png'">
+            <<elseif $halloween_robin_costume is "ghost">>
+                <<if C.npc.Robin.trauma gte 40>>
+                    <img class="icon" src="img/misc/icon/social/default/robin/robin_ghosttr.png">
+                <<else>>
+                    <img class="icon" src="img/misc/icon/social/default/robin/robin_ghost.png">
+                <</if>>
+            <</if>>
+        <<elseif $robin.timer.hurt gte 2>>
+            <img class="icon" @src="'img/misc/icon/social/default/robin/robin_betrayed_' + C.npc.Robin.pronoun + '.png'">
+        <<elseif _timer_hurt and $robin.timer.hurt gte 1>>
+            <img class="icon" @src="'img/misc/icon/social/default/robin/robin_conflicted_' + C.npc.Robin.pronoun + '.png'">
+        <<elseif $robinromance is 1>>
+            <<if C.npc.Robin.trauma gte 80>>
+                <<if C.npc.Robin.lust gte 50>>
+                    <img class="icon" @src="'img/misc/icon/social/default/robin/robin_lost_' + C.npc.Robin.pronoun + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/robin/robin_nothing_' + C.npc.Robin.pronoun + '.png'">
+                <</if>>
+            <<elseif C.npc.Robin.dom gte 40>>
+                <img class="icon" @src="'img/misc/icon/social/default/robin/robin_cherishes_' + C.npc.Robin.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/robin/robin_love_' + C.npc.Robin.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Robin.trauma gte 80>>
+            <img class="icon" @src="'img/misc/icon/social/default/robin/robin_traumatised_' + C.npc.Robin.pronoun + '.png'">
+        <<elseif C.npc.Robin.trauma gte 40>>
+            <img class="icon" @src="'img/misc/icon/social/default/robin/robin_pain_' + C.npc.Robin.pronoun + '.png'">
+        <<elseif C.npc.Robin.trauma gte 10>>
+            <img class="icon" @src="'img/misc/icon/social/default/robin/robin_troubled_' + C.npc.Robin.pronoun + '.png'">
+        <<elseif C.npc.Robin.dom gte 80>>
+            <img class="icon" @src="'img/misc/icon/social/default/robin/robin_protective_' + C.npc.Robin.pronoun + '.png'">
+        <<elseif C.npc.Robin.dom gte 20>>
+            <img class="icon" @src="'img/misc/icon/social/default/robin/robin_friend_' + C.npc.Robin.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/robin/robin_default_' + C.npc.Robin.pronoun + '.png'">
+        <</if>>
+    <<case Avery>>
+        <<if C.npc.Avery.state is "dismissed">>
+            <<if $avery_fate is "fallen" or $avery_fate is "kicked">>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_fallen_' + C.npc.Avery.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_dismissed_' + C.npc.Avery.pronoun + '.png'">
+            <</if>>
+        <<elseif Time.weekDay is 7 and $averydate is 1 and Time.hour gte 19 and Time.hour lte 21 and $averydatedone isnot 1>>
+            <img class="icon" @src="'img/misc/icon/social/default/avery/avery_wait_' + C.npc.Avery.pronoun + '.png'">
+        <<elseif $location is "estate" and $npc.includes("Avery")>>
+            <img class="icon" @src="'img/misc/icon/social/default/avery/avery_mask_' + C.npc.Avery.pronoun + '.png'">
+        <<elseif C.npc.Avery.rage gte 96>>
+            <img class="icon" @src="'img/misc/icon/social/default/avery/avery_given_' + C.npc.Avery.pronoun + '.png'">
+        <<elseif C.npc.Avery.love gte 60>>
+            <<if C.npc.Avery.rage gte 60>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_infuriated_' + C.npc.Avery.pronoun + '.png'">
+            <<elseif C.npc.Avery.rage gte 20>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_tighter_' + C.npc.Avery.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_prize_' + C.npc.Avery.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Avery.love gte 20>>
+            <<if C.npc.Avery.rage gte 20>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_possession_' + C.npc.Avery.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_cute_' + C.npc.Avery.pronoun + '.png'">
+            <</if>>
+        <<else>>
+            <<if C.npc.Avery.rage gte 60>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_insolent_' + C.npc.Avery.pronoun + '.png'">
+            <<elseif C.npc.Avery.rage gte 20>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_brat_' + C.npc.Avery.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/avery/avery_default_' + C.npc.Avery.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Kylar>>
+        <<if C.npc.Kylar.state is "prison" and $location isnot "prison">>
+            <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_prison_' + C.npc.Kylar.pronoun + '.png'">
+        <<elseif C.npc.Kylar.state is "prison" and $location is "prison">>
+            <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_prison1_' + C.npc.Kylar.pronoun + '.png'">
+        <<elseif $christmas_kylar is 3>>
+            <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_christmas_' + C.npc.Kylar.pronoun + '.png'">
+        <<elseif ($halloween_kylar is 1 or C.npc.Kylar.love gte 60) and Time.dayState is "night" and C.npc.Kylar.state is "active" and (($halloween is 1 and Time.monthDay is 31 and Time.hour gte 21) or (Time.monthName is "November" and Time.monthDay is 1 and Time.hour lte 6))>>
+            <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_halloween_' + C.npc.Kylar.pronoun + '.png'">
+        <<elseif C.npc.Kylar.love gte 90>>
+            <<if $kylar_camera is undefined>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_owl_' + C.npc.Kylar.pronoun + '.png'">
+            <<elseif C.npc.Kylar.rage gte 90>>
+                    <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_obsessed4_' + C.npc.Kylar.pronoun + '.png'">
+            <<elseif C.npc.Kylar.rage gte 60>>
+                    <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_obsessed3_' + C.npc.Kylar.pronoun + '.png'">
+            <<elseif C.npc.Kylar.rage gte 30>>
+                    <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_obsessed2_' + C.npc.Kylar.pronoun + '.png'">
+            <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_obsessed1_' + C.npc.Kylar.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Kylar.love gte 60>>
+            <<if C.npc.Kylar.rage gte 90>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_enamoured4_' + C.npc.Kylar.pronoun + '.png'">
+            <<elseif C.npc.Kylar.rage gte 60>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_enamoured3_' + C.npc.Kylar.pronoun + '.png'">
+            <<elseif C.npc.Kylar.rage gte 30>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_enamoured2_' + C.npc.Kylar.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_enamoured1_' + C.npc.Kylar.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Kylar.love gte 30>>
+            <<if C.npc.Kylar.rage gte 90>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_infatuated2_' + C.npc.Kylar.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_infatuated1_' + C.npc.Kylar.pronoun + '.png'">
+            <</if>>
+        <<else>>
+            <<if C.npc.Kylar.rage gte 90>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_fixated2_' + C.npc.Kylar.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_fixated1_' + C.npc.Kylar.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Whitney>>
+        <<if C.npc.Whitney.state is "dungeon">>
+            <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_dismissed_' + C.npc.Whitney.pronoun + '.png'">
+        <<elseif $halloween is 1 and Time.monthDay is 31 and Time.hour gte 19 and Time.hour lt 24>>
+            <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_halloween_' + C.npc.Whitney.pronoun + '.png'">
+        <<elseif $whitneyRescueStatus isnot undefined>>
+            <<if $whitneyRescueStatus is "humiliated" and !$whitneyRescueTimer>>
+                <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_vulnerable_' + C.npc.Whitney.pronoun + '.png'">
+            <<elseif $whitneyRescueStatus is "humiliated">>
+                <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_humiliated_' + C.npc.Whitney.pronoun + '.png'">
+            <<elseif $whitneyRescueStatus is "shaken">>
+                <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_shaken_' + C.npc.Whitney.pronoun + '.png'">
+            <<elseif $whitneyRescueStatus is "grateful">>
+                <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_grateful_' + C.npc.Whitney.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Whitney.love gte 20>>
+            <<if C.npc.Whitney.lust gte 60>>
+                <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_lust_' + C.npc.Whitney.pronoun + '.png'">
+            <<else>>
+                <<if C.npc.Whitney.dom lte 8>>
+                    <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_girlfriend_' + C.npc.Whitney.pronoun + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_own_' + C.npc.Whitney.pronoun + '.png'">
+                <</if>>
+            <</if>>
+        <<elseif C.npc.Whitney.love lte 5>>
+            <<if C.npc.Whitney.lust gte 60>>
+                <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_beg_' + C.npc.Whitney.pronoun + '.png'">
+            <<else>>
+                <<if C.npc.Whitney.dom gte 20>>
+                    <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_pathetic_' + C.npc.Whitney.pronoun + '.png'">
+                <<elseif C.npc.Whitney.dom lte 7>>
+                    <<if C.npc.Whitney.dom lte 2 and C.npc.Whitney.love lte 2>>
+                        <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_vendetta_' + C.npc.Whitney.pronoun + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_threat_' + C.npc.Whitney.pronoun + '.png'">
+                    <</if>>
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_freak_' + C.npc.Whitney.pronoun + '.png'">
+                <</if>>
+            <</if>>
+        <<else>>
+            <<if C.npc.Whitney.dom lte 8>>
+                <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_threat_' + C.npc.Whitney.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/whitney/whitney_fun_' + C.npc.Whitney.pronoun + '.png'">
+            <</if>>
+        <</if>>	
+    <<case Eden>>
+        <<if $halloween_eden_candy_given is 1>>
+            <img class="icon" @src="'img/misc/icon/social/default/eden/eden_halloween_' + C.npc.Eden.pronoun + '.png'">
+        <<elseif $christmas_gift_eden_given is 1>>
+            <img class="icon" @src="'img/misc/icon/social/default/eden/eden_christmas_' + C.npc.Eden.pronoun + '.png'">
+        <<elseif $valentines is 1 and Time.monthDay is 14 and $valentines_eden_bought is 1>>
+            <img class="icon" @src="'img/misc/icon/social/default/eden/eden_valentine_' + C.npc.Eden.pronoun + '.png'">
+        <<elseif $edenCagedEscape>>
+            <img class="icon" @src="'img/misc/icon/social/default/eden/eden_escape_' + C.npc.Eden.pronoun + '.png'">
+        <<elseif $syndromeeden is 1 and (($edenfreedom is 1 and $edendays gte 7) or ($edenfreedom gte 2 and $edendays gte 21))>>
+            <img class="icon" @src="'img/misc/icon/social/default/eden/eden_day2_' + C.npc.Eden.pronoun + '.png'">
+        <<elseif ($edenfreedom is 1 and $edendays gte 2) or ($edenfreedom gte 2 and $edendays gte 8)>>
+            <img class="icon" @src="'img/misc/icon/social/default/eden/eden_day1_' + C.npc.Eden.pronoun + '.png'">
+        <<elseif C.npc.Eden.love gte 150>>
+            <<if $edenfreedom is 2>>
+                <img class="icon" @src="'img/misc/icon/social/default/eden/eden_adorable_' + C.npc.Eden.pronoun + '.png'">
+            <<elseif $edenfreedom is 1>>
+                <img class="icon" @src="'img/misc/icon/social/default/eden/eden_delightful_' + C.npc.Eden.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/eden/eden_inspiring_' + C.npc.Eden.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Eden.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/eden/eden_terrible_' + C.npc.Eden.pronoun + '.png'">
+        <<else>>
+            <<if C.npc.Eden.dom gte $npcdomhigh>>
+                <img class="icon" @src="'img/misc/icon/social/default/eden/eden_cute_' + C.npc.Eden.pronoun + '.png'">
+            <<elseif C.npc.Eden.dom lte $npcdomlow>>
+                <img class="icon" @src="'img/misc/icon/social/default/eden/eden_lookup_' + C.npc.Eden.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/eden/eden_default_' + C.npc.Eden.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Sydney>>
+        <<if $sydney.hair isnot "ponytail">>
+            <<set _sydiconhair to "_lo">>
+        <<else>>
+            <<set _sydiconhair to "_po">>
+        <</if>>
+        <<if C.npc.Sydney.hairColour isnot "strawberryblond">>
+            <<set _sydiconhairC to "bl">>
+        <<else>>
+            <<set _sydiconhairC to "st">>
+        <</if>>
+        <<if $sydney.glasses is "contacts">>
+            <<set _sydiconglasses to "_co">>
+        <<elseif $sydney.glasses is "broken" or $sydney.glasses is "playerbroken">>
+            <<set _sydiconglasses to "_br">>
+        <<else>>
+            <<set _sydiconglasses to "_gl">>
+        <</if>>
+        <div class="icon-container">
+            <<if Time.weekDay is 1 and Time.hour is 12>>
+                <<if C.npc.Sydney.pronoun is "f">><!-- 修女服+头巾 -->
+                    <img class="icon infront" @src="'img/misc/icon/social/default/sydney/'+_sydiconhairC+_sydiconhair+_sydiconglasses+'_f.png'">
+                <<else>>
+                    <img class="icon infront" @src="'img/misc/icon/social/default/sydney/'+_sydiconhairC+_sydiconhair+_sydiconglasses+'.png'">
+                <</if>>
+            <<elseif $sydneyromance is 1 and C.npc.Sydney.purity gt 80 and C.npc.Sydney.lust gte 60 and $sydney.hair is "ponytail">>
+                <!-- anything带有蒸汽，马尾需要专门做一个版本防止遮挡 -->
+                <img class="icon infront" @src="'img/misc/icon/social/default/sydney/'+_sydiconhairC+'_po'+_sydiconglasses+'_a.png'">
+            <<else>><!-- equal、fond、beyondc/p都有红晕，但应该不影响 -->
+                <img class="icon infront" @src="'img/misc/icon/social/default/sydney/'+_sydiconhairC+_sydiconhair+_sydiconglasses+'.png'">
+            <</if>>
+            <<if Time.weekDay is 1 and Time.hour is 12>><!-- 男性无头巾版本 -->
+                <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_mass_' + _sydiconhairC + '.png'">
+            <<elseif $sydneyromance is 1>>
+                <<if C.npc.Sydney.purity gt 80>>
+                    <<if C.npc.Sydney.lust gte 60>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_anything_' + _sydiconhairC + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_beyondp_' + _sydiconhairC + '.png'">
+                    <</if>>
+                <<elseif C.npc.Sydney.purity gte 40>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_beyondp_' + _sydiconhairC + '.png'">
+                <<elseif C.npc.Sydney.corruption gte 40>>
+                    <<if C.npc.Sydney.lust gte 20>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_deflowered_' + _sydiconhairC + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_beyondc_' + _sydiconhairC + '.png'">
+                    <</if>>
+                <<elseif C.npc.Sydney.corruption gte 10>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_influenced_' + _sydiconhairC + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_beyondp_' + _sydiconhairC + '.png'">
+                <</if>>
+            <<elseif C.npc.Sydney.love gte 60>>
+                <<if C.npc.Sydney.purity gte 50>>
+                    <<if $purity lte 500 or $demon gte 6>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_misguided_' + _sydiconhairC + '.png'">
+                    <<elseif $temple_rank is "monk" or $temple_rank is "priest" or $temple_rank is "initiate" or $angel gte 6>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_equal_' + _sydiconhairC + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_fond_' + _sydiconhairC + '.png'">
+                    <</if>>
+                <<elseif C.npc.Sydney.corruption gte 10>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_influenced_' + _sydiconhairC + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_conflicted_' + _sydiconhairC + '.png'">
+                <</if>>
+            <<elseif C.npc.Sydney.love gte 30>>
+                <<if C.npc.Sydney.purity gte 50>>
+                    <<if $purity lte 500 or $demon gte 6>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_misguided_' + _sydiconhairC + '.png'">
+                    <<elseif $temple_rank is "monk" or $temple_rank is "priest" or $temple_rank is "initiate" or $angel gte 6>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_equal_' + _sydiconhairC + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_fond_' + _sydiconhairC + '.png'">
+                    <</if>>
+                <<elseif C.npc.Sydney.corruption gte 10>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_know_' + _sydiconhairC + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_conflicted_' + _sydiconhairC + '.png'">
+                <</if>>
+            <<elseif C.npc.Sydney.love gte 10>>
+                <<if $sydneySeen and $sydneySeen.includes("initiate")>>
+                    <<if $purity lte 500 or $demon gte 6>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_heretical_' + _sydiconhairC + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_intrigued_' + _sydiconhairC + '.png'">
+                    <</if>>
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_intrigued_' + _sydiconhairC + '.png'">
+                <</if>>
+            <<else>>
+                <<if $sydneySeen and $sydneySeen.includes("initiate")>>
+                    <<if $purity lte 500 or $demon gte 6>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_heretical_' + _sydiconhairC + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_initiate_' + _sydiconhairC + '.png'">
+                    <</if>>
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_default_' + _sydiconhairC + '.png'">
+                <</if>>
+            <</if>>
+        </div>
+    <<case Alex>>
+        <<if $alex_countdown is undefined and $farm_stage gte 7>>
+            <<if C.npc.Alex.lust gte 60>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_ride_' + C.npc.Alex.pronoun + '.png'">
+            <<elseif C.npc.Alex.dom gte 30>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_charge_' + C.npc.Alex.pronoun + '.png'">
+            <<elseif C.npc.Alex.dom lte -30>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_depend_' + C.npc.Alex.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_partner_' + C.npc.Alex.pronoun + '.png'">
+            <</if>>
+        <<elseif $farm_stage gte 6>>
+            <<if C.npc.Alex.dom gte 30>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_control_' + C.npc.Alex.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_depend_' + C.npc.Alex.pronoun + '.png'">
+            <</if>>
+        <<elseif $farm_stage gte 4>>
+            <<if C.npc.Alex.dom gte 10>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_respect_' + C.npc.Alex.pronoun + '.png'">
+            <<elseif C.npc.Alex.dom lte -10>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_admire_' + C.npc.Alex.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_glad_' + C.npc.Alex.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Alex.love gte 10>>
+            <img class="icon" @src="'img/misc/icon/social/default/alex/alex_glad_' + C.npc.Alex.pronoun + '.png'">
+        <<elseif C.npc.Alex.love lte -10>>
+            <<if C.npc.Alex.lust gte 10>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_pervert_' + C.npc.Alex.pronoun + '.png'">
+            <<elseif C.npc.Alex.dom gte 10>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_farmhand_' + C.npc.Alex.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/alex/alex_bother_' + C.npc.Alex.pronoun + '.png'">
+            <</if>>
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/alex/alex_default_' + C.npc.Alex.pronoun + '.png'">
+        <</if>>
+    <<case "Ivory Wraith">>
+        <<if $wraith>>
+            <<rng>>
+            <<if $christmas_wraith and $christmas is 1>>
+                <img class="icon" src="img/misc/icon/social/default/iw/iw_christmas.png">
+            <<elseif $wraith.hunt and !$wraith.type>>
+                <<if $wraithPrison and $wraithPrison.vision is true and $rng gte 96>>
+                    <img class="icon" src="img/misc/icon/social/default/iw/iw_life3.png">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/iw/iw_' + V.wraith.state + '3.png'">
+                <</if>>
+            <<elseif _rngWraithLineChance is 1>>
+            <<elseif $bus isnot "lake_ruin_prison" and !$wraith.type and Time.isBloodMoon()>>
+                <<if $wraithPrison and $wraithPrison.vision is true and $rng gte 96>>
+                    <img class="icon" src="img/misc/icon/social/default/iw/iw_life2.png">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/iw/iw_' + V.wraith.state + '2.png'">
+                <</if>>
+            <<else>>
+                <<if $wraith.state is "haunt">>
+                    <<if C.npc['Ivory Wraith'].lust gte 18>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_haunt3.png">
+                    <<elseif C.npc['Ivory Wraith'].lust gte 14>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_haunt2.png">
+                    <<else>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_haunt.png">
+                    <</if>>
+                <<elseif $wraith.state is "despair">>
+                    <<if C.npc['Ivory Wraith'].lust gte 18>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_despair3.png">
+                    <<elseif C.npc['Ivory Wraith'].lust gte 14>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_despair2.png">
+                    <<else>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_despair.png">
+                    <</if>>
+                <<else>>
+                    <<if C.npc['Ivory Wraith'].lust gte 15>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_active3.png">
+                    <<elseif C.npc['Ivory Wraith'].lust gte 6>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_active2.png">
+                    <<else>>
+                        <img class="icon" src="img/misc/icon/social/default/iw/iw_active.png">
+                    <</if>>
+                <</if>>
+            <</if>>
+        <</if>>
+    <<case "Great Hawk">>
+        <<if ($settings.monsterChance gte random(1, 100) and ($hallucinations gte 1 or !$settings.monsterHallucinationsOnly)) or $greathawkmonster is 2>>
+            <<if $syndromebird is 1>>
+                <<if C.npc['Great Hawk'].love gte 60>>
+                    <<if ["lurker", "trash", "valuables", "food", "clothes"].includes(_bird_loot_select)>>
+                        <img class="icon" @src="'img/misc/icon/social/default/gh/gh_' + _bird_loot_select + '.png'">
+                    <<elseif C.npc['Great Hawk'].dom gte 50>>
+                        <img class="icon" src="img/misc/icon/social/default/gh/gh_domhigh.png">
+                    <<else>>
+                        <img class="icon" src="img/misc/icon/social/default/gh/gh_domlow.png">
+                    <</if>>
+                <<elseif C.npc['Great Hawk'].love gte 20>>
+                    <<if C.npc['Great Hawk'].dom gte 50>>
+                        <img class="icon" src="img/misc/icon/social/default/gh/gh_return.png">
+                    <<elseif C.npc['Great Hawk'].dom gte 20>>
+                        <img class="icon" src="img/misc/icon/social/default/gh/gh_distraught.png">
+                    <<else>>
+                        <img class="icon" src="img/misc/icon/social/default/gh/gh_desperate.png">
+                    <</if>>
+                <<else>>
+                    <<if C.npc['Great Hawk'].dom gte 50>>
+                        <img class="icon" src="img/misc/icon/social/default/gh/gh_mate.png">
+                    <<elseif C.npc['Great Hawk'].dom gte 20>>
+                        <img class="icon" src="img/misc/icon/social/default/gh/gh_default.png">
+                    <<else>>
+                        <img class="icon" src="img/misc/icon/social/default/gh/gh_smitten.png">
+                    <</if>>
+                <</if>>
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/gh/gh_stay.png">
+            <</if>>
+        <</if>>
+    <<case "Black Wolf">>
+        <<if ($settings.monsterChance gte random(1, 100) and ($hallucinations gte 1 or !$settings.monsterHallucinationsOnly)) or $blackwolfmonster is 2>>
+            <<if $syndromewolves is 1>>
+                <<if C.npc['Black Wolf'].love gte $npclovehigh>>
+                    <<if $wolfpackferocity gt $wolfpackharmony>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_proud_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <<elseif $wolfpackharmony gt $wolfpackferocity>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_glad_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_mate_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <</if>>
+                <<elseif C.npc['Black Wolf'].love lte $npclovelow>>
+                    <img class="icon" @src="'img/misc/icon/social/default/bw/bw_terrible_' + C.npc['Black Wolf'].pronoun + '.png'">
+                <<else>>
+                    <<if $wolfpackferocity gt $wolfpackharmony>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_powerful_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <<elseif $wolfpackharmony gt $wolfpackferocity>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_worthy_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_value_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <</if>>
+                <</if>>
+            <<else>>
+                <<if C.npc['Black Wolf'].love gte $npclovehigh>>
+                    <<if $wolfpackferocity gt $wolfpackharmony>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_powerful_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <<elseif $wolfpackharmony gt $wolfpackferocity>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_worthy_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_value_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <</if>>
+                <<elseif C.npc['Black Wolf'].love lte $npclovelow>>
+                    <img class="icon" @src="'img/misc/icon/social/default/bw/bw_terrible_' + C.npc['Black Wolf'].pronoun + '.png'">
+                <<else>>
+                    <<if $wolfpackferocity gt $wolfpackharmony>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_tussle_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <<elseif $wolfpackharmony gt $wolfpackferocity>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_time_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <<else>>
+                        <img class="icon" @src="'img/misc/icon/social/default/bw/bw_default_' + C.npc['Black Wolf'].pronoun + '.png'">
+                    <</if>>
+                <</if>>
+            <</if>>
+        <</if>>
+    <<case Gwylan>>
+        <<if C.npc.Gwylan.state is "scorned">>
+            <<if $yearningLetter is 2>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_yearning.png">
+            <<elseif $gwylanSeen?.includes("yearning_pub")>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_sulking.png">
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_scorned.png">
+            <</if>>
+        <<elseif $gwylanSeen?.includes("ritual_sex") and $gwylan?.timer.ritual and Time.date.dayDifference(new DateTime($gwylan.timer.ritual)) lte 0>>
+            <<if $gwylan.hunting gte 2>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_ritual.png">
+            <<elseif (_gwylanStatus.includesAny("heat") and _gwylanTF.known) or (_gwylanStatus.includesAny("aroused", "lust"))>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_heat.png">
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_ready.png">
+            <</if>>
+        <<elseif $gwylanSeen?.includes("romance")>>
+            <<if isGwylanAbsent() is "nobody">>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_home.png">
+            <<elseif $gwylan.taken>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_taken.png">
+            <<elseif $gwylan?.wary gte 2 && ($brownFoxRevealed or $gwylanSeen?.includes("auriga_scar"))>>
+                <<if $avery_fate is "ascended" and $auriga_scar gte 1>>
+                    <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_ascended.png">
+                <<else>>
+                    <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_disappointed.png">
+                <</if>>
+            <<elseif C.npc.Gwylan.dom gte 140>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think5.png">
+            <<elseif C.npc.Gwylan.dom gte 110>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think4.png">
+            <<elseif C.npc.Gwylan.dom gte 80>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think3.png">
+            <<elseif C.npc.Gwylan.dom gte 50>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think2.png">
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think1.png">
+            <</if>>
+        <<elseif $gwylanSeen?.includes("partners")>>
+            <<if $gwylan?.wary gte 2 && ($brownFoxRevealed or $gwylanSeen?.includes("auriga_scar"))>>
+                <<if $avery_fate is "ascended" and $auriga_scar gte 1>>
+                    <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_ascended.png">
+                <<else>>
+                    <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_disappointed.png">
+                <</if>>
+            <<elseif _gwylanStatus.includes("wantsPregnancy")>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_heat.png">
+            <<elseif C.npc.Gwylan.dom gte 140>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_conflicted.png">
+            <<elseif _gwylanStatus.includes("heat")>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_rut.png">
+            <<elseif C.npc.Gwylan.dom gte 110>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think4.png">
+            <<elseif C.npc.Gwylan.dom gte 80>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think3.png">
+            <<elseif C.npc.Gwylan.dom gte 50>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think2.png">
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_think1.png">
+            <</if>>
+        <<elseif $gwylanSeen?.includes("yearning") and C.npc.Gwylan.dom gte 25>>
+            <<if $gwylan?.wary gte 2 && ($brownFoxRevealed or $gwylanSeen?.includes("auriga_scar"))>>
+                <<if $avery_fate is "ascended" and $auriga_scar gte 1>>
+                    <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_ascended.png">
+                <<else>>
+                    <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_disappointed.png">
+                <</if>>
+            <<elseif C.npc.Gwylan.dom gte 75 and $dateCount?.GwylanSex gte 5>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_advance.png">
+            <<elseif _gwylanStatus.includes("lust")>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_nervous.png">
+            <<elseif C.npc.Gwylan.dom gte 50>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_companionship.png">
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_back.png">
+            <</if>>
+        <<else>>
+            <<if $gwylan?.wary gt 1 && ($brownFoxRevealed or $gwylanSeen?.includes("auriga_scar"))>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_revealed.png">
+            <<elseif _gwylanStatus.includes("aroused")>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_nervous.png">
+            <<elseif $gwylanSeen.includes("hat_found")>>
+                <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_found.png">
+            <<else>>
+                <<if _gwylanLovePercent gte 20 or $avery_mansion>>
+                    <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan_special.png">
+                <<else>>
+                    <img class="icon" src="img/misc/icon/social/default/gwylan/gwylan.png">
+                <</if>>
+            <</if>>
+        <</if>>
+    <<case Bailey>>
+        <<if $renttime lte 0>>
+            <img class="icon" @src="'img/misc/icon/social/default/bailey/bailey_rent_' + C.npc.Bailey.pronoun + '.png'">
+        <<elseif Time.hour gt 6 and Time.hour lt 10>>
+            <<if $daily.baileyVisit gt 3>>
+                <img class="icon" @src="'img/misc/icon/social/default/bailey/bailey_bother_' + C.npc.Bailey.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/bailey/bailey_office_' + C.npc.Bailey.pronoun + '.png'">
+            <</if>>
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/bailey/bailey_' + C.npc.Bailey.pronoun + '.png'">
+        <</if>>
+    <<case Briar>>
+        <<if $brothelshowdata?.missed>>
+            <img class="icon" @src="'img/misc/icon/social/default/briar/briar_missed_' + C.npc.Briar.pronoun + '.png'">
+        <<elseif C.npc.Briar.love gte 50>>
+            <img class="icon" @src="'img/misc/icon/social/default/briar/briar_delightful_' + C.npc.Briar.pronoun + '.png'">
+        <<elseif C.npc.Briar.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/briar/briar_terrible_' + C.npc.Briar.pronoun + '.png'">
+        <<else>>
+            <<if C.npc.Briar.dom gte $npcdomhigh>>
+                <img class="icon" @src="'img/misc/icon/social/default/briar/briar_cute_' + C.npc.Briar.pronoun + '.png'">
+            <<elseif C.npc.Briar.dom lte $npcdomlow>>
+                <img class="icon" @src="'img/misc/icon/social/default/briar/briar_lookup_' + C.npc.Briar.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/briar/briar_default_' + C.npc.Briar.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Charlie>>
+        <<if $danceskill gte 400>>
+            <<if C.npc.Charlie.love gte 35>>
+                <img class="icon" @src="'img/misc/icon/social/default/charlie/charlie_delightful_' + C.npc.Charlie.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/charlie/charlie_talent_' + C.npc.Charlie.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Charlie.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/charlie/charlie_terrible_' + C.npc.Charlie.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/charlie/charlie_default_' + C.npc.Charlie.pronoun + '.png'">
+        <</if>>
+    <<case Darryl>>
+        <<if C.npc.Darryl.love gte 40>>
+            <<if C.npc.Darryl.dom gte 25>>
+                <img class="icon" @src="'img/misc/icon/social/default/darryl/darryl_adorable_' + C.npc.Darryl.pronoun + '.png'">
+            <<elseif C.npc.Darryl.dom lte $npcdomlow>>
+                <img class="icon" @src="'img/misc/icon/social/default/darryl/darryl_inspiring_' + C.npc.Darryl.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/darryl/darryl_cute_' + C.npc.Darryl.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Darryl.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/darryl/darryl_terrible_' + C.npc.Darryl.pronoun + '.png'">
+        <<else>>
+            <<if C.npc.Darryl.dom gte 25>>
+                <img class="icon" @src="'img/misc/icon/social/default/darryl/darryl_cute_' + C.npc.Darryl.pronoun + '.png'">
+            <<elseif C.npc.Darryl.dom lte $npcdomlow>>
+                <img class="icon" @src="'img/misc/icon/social/default/darryl/darryl_lookup_' + C.npc.Darryl.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/darryl/darryl_default_' + C.npc.Darryl.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Doren>>
+        <<if C.npc.Doren.love gte 50>>
+            <img class="icon" @src="'img/misc/icon/social/default/doren/doren_delightful_' + C.npc.Doren.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/doren/doren_default_' + C.npc.Doren.pronoun + '.png'">
+        <</if>>
+    <<case Harper>>
+        <<if $location is "estate" and $npc.includes("Harper") and $awareness gte 400>>
+            <img class="icon" @src="'img/misc/icon/social/default/harper/harper_mask_' + C.npc.Harper.pronoun + '.png'">
+        <<elseif $awareness gte 400>>
+            <<if C.npc.Harper.love gte 50>>
+                <img class="icon" src="img/misc/icon/social/default/harper/harper_adorable.png">
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/harper/harper_delightful.png">
+            <</if>>
+        <<elseif $awareness gte 200>>
+            <img class="icon" src="img/misc/icon/social/default/harper/harper_inspiring.png">
+        <<elseif C.npc.Harper.love lte $npclovelow>>
+            <<if C.npc.Harper.dom lte $npcdomlow>>
+                <img class="icon" src="img/misc/icon/social/default/harper/harper_lookup.png">
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/harper/harper_terrible.png">
+            <</if>>
+        <<else>>
+            <<if C.npc.Harper.love gte 50>>
+                <img class="icon" src="img/misc/icon/social/default/harper/harper_cute.png">
+            <<else>>
+                <img class="icon" src="img/misc/icon/social/default/harper/harper_default.png">
+            <</if>>
+        <</if>>
+    <<case Jordan>>
+        <<if C.npc.Jordan.love gte 25>>
+            <img class="icon" src="img/misc/icon/social/default/jordan/jordan_delightful.png">
+        <<elseif C.npc.Jordan.love lte $npclovelow>>
+            <img class="icon" src="img/misc/icon/social/default/jordan/jordan_terrible.png">
+        <<else>>
+            <img class="icon" src="img/misc/icon/social/default/jordan/jordan_default.png">
+        <</if>>
+    <<case Landry>>
+        <<if $mickeyPub gte 2 and $pubfame and ($pubfame.status is "ready" or $pubfame.status is "accepted" or $pubfame.status is "done")>>
+            <img class="icon" @src="'img/misc/icon/social/default/landry/landry_mickey_' + C.npc.Landry.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/landry/landry_default_' + C.npc.Landry.pronoun + '.png'">
+        <</if>>
+    <<case Leighton>>
+        <<if C.npc.Leighton.love gte 50>>
+            <<if C.npc.Leighton.dom gte 20>>
+                <img class="icon" @src="'img/misc/icon/social/default/leighton/leighton_adorable_' + C.npc.Leighton.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/leighton/leighton_delightful_' + C.npc.Leighton.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Leighton.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/leighton/leighton_terrible_' + C.npc.Leighton.pronoun + '.png'">
+        <<else>>
+            <<if C.npc.Leighton.dom gte 20>>
+                <img class="icon" @src="'img/misc/icon/social/default/leighton/leighton_cute_' + C.npc.Leighton.pronoun + '.png'">
+            <<elseif C.npc.Leighton.dom lte $npcdomlow>>
+                <img class="icon" @src="'img/misc/icon/social/default/leighton/leighton_lookup_' + C.npc.Leighton.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/leighton/leighton_default_' + C.npc.Leighton.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Mason>>
+        <<if C.npc.Mason.love gte 35>>
+            <<if C.npc.Mason.lust gte 40>>
+                <img class="icon" @src="'img/misc/icon/social/default/mason/mason_lust3_' + C.npc.Mason.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/mason/mason_delightful_' + C.npc.Mason.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Mason.love gte 15>>
+            <<if C.npc.Mason.lust gte 30>>
+                <img class="icon" @src="'img/misc/icon/social/default/mason/mason_lust2_' + C.npc.Mason.pronoun + '.png'">
+            <</if>>
+                <img class="icon" @src="'img/misc/icon/social/default/mason/mason_best_' + C.npc.Mason.pronoun + '.png'">
+        <<elseif C.npc.Mason.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/mason/mason_terrible_' + C.npc.Mason.pronoun + '.png'">
+        <<else>>
+            <<if C.npc.Mason.lust gte 20>>
+                <img class="icon" @src="'img/misc/icon/social/default/mason/mason_lust1_' + C.npc.Mason.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/mason/mason_default_' + C.npc.Mason.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Morgan>>
+        <<if C.npc.Morgan.love gte 50>>
+            <<if C.npc.Morgan.dom gte $npcdomhigh>>
+                <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_adorable_' + C.npc.Morgan.pronoun + '.png'">
+            <<elseif C.npc.Morgan.dom lte $npcdomlow>>
+                <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_inspiring_' + C.npc.Morgan.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_delightful_' + C.npc.Morgan.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Morgan.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_terrible_' + C.npc.Morgan.pronoun + '.png'">
+        <<else>>
+            <<if C.npc.Morgan.dom gte $npcdomhigh>>
+                <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_cute_' + C.npc.Morgan.pronoun + '.png'">
+            <<elseif C.npc.Morgan.dom lte $npcdomlow>>
+                <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_lookup_' + C.npc.Morgan.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_default_' + C.npc.Morgan.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case River>>
+        <<if C.npc.River.love gte 40>>
+            <img class="icon" @src="'img/misc/icon/social/default/river/river_delightful_' + C.npc.River.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/river/river_default_' + C.npc.River.pronoun + '.png'">
+        <</if>>
+    <<case Sam>>
+        <<if C.npc.Sam.love gte 10>>
+            <img class="icon" @src="'img/misc/icon/social/default/sam/sam_delightful_' + C.npc.Sam.pronoun + '.png'">
+        <<elseif C.npc.Sam.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/sam/sam_terrible_' + C.npc.Sam.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/sam/sam_default_' + C.npc.Sam.pronoun + '.png'">
+        <</if>>
+    <<case Sirris>>
+        <<if $adultshopunlocked>>
+            <<if C.npc.Sirris.love gte 50>>
+                <<if $sydneyromance gte 1 and $sydneySeen?.includes("parent") and pregnancyCompatible("Sydney") and $rng gte 51>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sirris/sirris_grandkids_' + C.npc.Sirris.pronoun + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sirris/sirris_delightful_' + C.npc.Sirris.pronoun + '.png'">
+                <</if>>
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/sirris/sirris_delightful_' + C.npc.Sirris.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Sirris.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/sirris/sirris_terrible_' + C.npc.Sirris.pronoun + '.png'">
+        <<else>>
+            <<if C.npc.Sirris.love gte 25>>
+                <img class="icon" @src="'img/misc/icon/social/default/sirris/sirris_fine_' + C.npc.Sirris.pronoun + '.png'">
+            <<else>>
+                <<if $adultshopintro>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sirris/sirris_help_' + C.npc.Sirris.pronoun + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/sirris/sirris_default_' + C.npc.Sirris.pronoun + '.png'">
+                <</if>>
+            <</if>>
+        <</if>>
+    <<case Winter>>
+        <<if C.npc.Winter.love gte 50>>
+            <img class="icon" @src="'img/misc/icon/social/default/winter/winter_delightful_' + C.npc.Winter.pronoun + '.png'">
+        <<elseif C.npc.Winter.love gte 25>>
+            <img class="icon" @src="'img/misc/icon/social/default/winter/winter_lookup_' + C.npc.Winter.pronoun + '.png'">
+        <<elseif C.npc.Winter.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/winter/winter_terrible_' + C.npc.Winter.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/winter/winter_default_' + C.npc.Winter.pronoun + '.png'">
+        <</if>>
+    <<case Niki>>
+        <<if C.npc.Niki.love gte 25>>
+            <img class="icon" @src="'img/misc/icon/social/default/niki/niki_delightful_' + C.npc.Niki.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/niki/niki_default_' + C.npc.Niki.pronoun + '.png'">
+        <</if>>
+    <<case Quinn>>
+        <<if C.npc.Quinn.love gte 25>>
+            <img class="icon" @src="'img/misc/icon/social/default/quinn/quinn_interest_' + C.npc.Quinn.pronoun + '.png'">
+        <<elseif C.npc.Quinn.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/quinn/quinn_terrible_' + C.npc.Quinn.pronoun + '.png'">
+        <<else>>
+            <<if $town_projects.diving gte 3>>
+                <img class="icon" @src="'img/misc/icon/social/default/quinn/quinn_necklace_' + C.npc.Quinn.pronoun + '.png'">
+            <<elseif C.npc.Quinn.lust gte 20>>
+                <img class="icon" @src="'img/misc/icon/social/default/quinn/quinn_mind_' + C.npc.Quinn.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/quinn/quinn_default_' + C.npc.Quinn.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Remy>>
+        <div class="icon-container">
+            <<if $remy_seen is "manor" and $location is "estate" and $npc.includes("Remy")>>
+                <img class="icon" @src="'img/misc/icon/social/default/remy/remy_mask_' + C.npc.Remy.pronoun + '.png'">
+            <<elseif C.npc.Remy.love gte 50>>
+                <<if $remy_mask is 1>>
+                    <img class="icon infront" src="img/misc/icon/social/default/remy/remy_mask_low.png">
+                <</if>>
+                <<if C.npc.Remy.dom gte 25>>
+                    <img class="icon" @src="'img/misc/icon/social/default/remy/remy_adorable_' + C.npc.Remy.pronoun + '.png'">
+                <<elseif C.npc.Remy.dom lte $npcdomlow>>
+                    <img class="icon" @src="'img/misc/icon/social/default/remy/remy_inspiring_' + C.npc.Remy.pronoun + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/remy/remy_delightful_' + C.npc.Remy.pronoun + '.png'">
+                <</if>>
+            <<elseif C.npc.Remy.love lte $npclovelow>>
+                <<if $remy_mask is 1>>
+                    <img class="icon infront" src="img/misc/icon/social/default/remy/remy_mask_high.png">
+                <</if>>
+                <img class="icon" @src="'img/misc/icon/social/default/remy/remy_terrible_' + C.npc.Remy.pronoun + '.png'">
+            <<else>>
+                <<if $remy_mask is 1>>
+                    <img class="icon infront" src="img/misc/icon/social/default/remy/remy_mask_high.png">
+                <</if>>
+                <<if C.npc.Remy.dom gte $npcdomhigh>>
+                    <img class="icon" @src="'img/misc/icon/social/default/remy/remy_cute_' + C.npc.Remy.pronoun + '.png'">
+                <<elseif C.npc.Remy.dom lte $npcdomlow>>
+                    <img class="icon" @src="'img/misc/icon/social/default/remy/remy_lookup_' + C.npc.Remy.pronoun + '.png'">
+                <<else>>
+                    <img class="icon" @src="'img/misc/icon/social/default/remy/remy_default_' + C.npc.Remy.pronoun + '.png'">
+                <</if>>
+            <</if>>
+        </div>
+    <<case Wren>>
+        <<if $location is "prison" and $prison_wren_intro isnot 1>>
+            <img class="icon" @src="'img/misc/icon/social/default/wren/wren_prison_' + C.npc.Wren.pronoun + '.png'">
+        <<elseif C.npc.Wren.love gte 35>>
+            <<if C.npc.Wren.dom gte 25>>
+                <img class="icon" @src="'img/misc/icon/social/default/wren/wren_adorable_' + C.npc.Wren.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/wren/wren_inspiring_' + C.npc.Wren.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Wren.love gte 15>>
+            <<if C.npc.Wren.dom gte 25>>
+                <img class="icon" @src="'img/misc/icon/social/default/wren/wren_delightful_' + C.npc.Wren.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/wren/wren_lookup_' + C.npc.Wren.pronoun + '.png'">
+            <</if>>
+        <<elseif C.npc.Wren.love lte $npclovelow>>
+            <<if C.npc.Wren.dom gte $npcdomhigh or C.npc.Wren.dom lte $npcdomlow>>
+                <img class="icon" @src="'img/misc/icon/social/default/wren/wren_cheat_' + C.npc.Wren.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/wren/wren_terrible_' + C.npc.Wren.pronoun + '.png'">
+            <</if>>
+        <<else>>
+            <<if C.npc.Wren.dom gte 25>>
+                <img class="icon" @src="'img/misc/icon/social/default/wren/wren_cute_' + C.npc.Wren.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/wren/wren_default_' + C.npc.Wren.pronoun + '.png'">
+            <</if>>
+        <</if>>
+    <<case Zephyr>>
+        <<if C.npc.Zephyr.love gte 50>>
+            <img class="icon" @src="'img/misc/icon/social/default/zephyr/zephyr_delightful_' + C.npc.Zephyr.pronoun + '.png'">
+        <<elseif C.npc.Zephyr.love lte $npclovelow>>
+            <img class="icon" @src="'img/misc/icon/social/default/zephyr/zephyr_terrible_' + C.npc.Zephyr.pronoun + '.png'">
+        <<else>>
+            <img class="icon" @src="'img/misc/icon/social/default/zephyr/zephyr_default_' + C.npc.Zephyr.pronoun + '.png'">
+        <</if>>
+<</switch>>
+
+:: NPCAvatarsMod-Mimic-Default
+<<if $wraith.mimic isnot "">>
+    <<switch $wraith.mimic>>
+        <<case Robin>>
+            <<if $wraith.state is "haunt">>
+                <img class="icon" @src="'img/misc/icon/social/default/robin/robin_iwr_' + C.npc.Robin.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/robin/robin_iwb_' + C.npc.Robin.pronoun + '.png'">
+            <</if>>
+        <<case Kylar>>
+            <<if $wraith.state is "haunt">>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_iwr_' + C.npc.Kylar.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/kylar/kylar_iwb_' + C.npc.Kylar.pronoun + '.png'">
+            <</if>>
+        <<case Eden>>
+            <<if $wraith.state is "haunt">>
+                <img class="icon" @src="'img/misc/icon/social/default/eden/eden_iwr_' + C.npc.Eden.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/eden/eden_iwb_' + C.npc.Eden.pronoun + '.png'">
+            <</if>>
+        <!-- 原版未实装 -->
+        <<case Sydney>>
+            <<if $sydney.hair isnot "ponytail">>
+                <<set _sydiconhair to "_lo">>
+            <<else>>
+                <<set _sydiconhair to "_po">>
+            <</if>>
+            <<if C.npc.Sydney.hairColour isnot "strawberryblond">>
+                <<set _sydiconhairC to "bl">>
+            <<else>>
+                <<set _sydiconhairC to "st">>
+            <</if>>
+            <<if $sydney.glasses is "contacts">>
+                <<set _sydiconglasses to "_co">>
+            <<elseif $sydney.glasses is "broken" or $sydney.glasses is "playerbroken">>
+                <<set _sydiconglasses to "_br">>
+            <<else>>
+                <<set _sydiconglasses to "_gl">>
+            <</if>>
+            <img class="icon infront" @src="'img/misc/icon/social/default/sydney/'+_sydiconhairC+_sydiconhair+_sydiconglasses+'.png'">
+            <<if $wraith.state is "haunt">>
+                <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_iwr_' + _sydiconhairC + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/sydney/syd_iwb_' + _sydiconhairC + '.png'">
+            <</if>>
+        <<case Morgan>>
+            <<if $wraith.state is "haunt">>
+                <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_iwr_' + C.npc.Morgan.pronoun + '.png'">
+            <<else>>
+                <img class="icon" @src="'img/misc/icon/social/default/morgan/morgan_iwb_' + C.npc.Morgan.pronoun + '.png'">
+            <</if>>
+    <</switch>>
+<</if>>
